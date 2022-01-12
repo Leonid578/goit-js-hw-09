@@ -1,0 +1,39 @@
+
+input {
+    width: 300px;
+    height: 60px;
+    color: rgb(0, 0, 0);;
+    font-size: 25px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin-left:25px ;
+  }
+  
+  button {
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 4px;
+    
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+  }
+  .timer {
+    display: flex;
+    margin-top: 30px;
+    margin-left:25px ;
+  }
+  .value {
+    font-size: 60px;
+  }
+  .label {
+    margin-top: 10px;
+    font-size: 20px;
+  }
