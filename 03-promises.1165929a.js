@@ -5,4 +5,4 @@ var t,o=arguments[3];!function(o,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"GyVV":[function(require,module,exports) {
 "use strict";var e=require("notiflix/build/notiflix-notify-aio");const t={form:document.querySelector(".form"),inputDelay:document.querySelector('input[name="delay"]'),inputStep:document.querySelector('input[name="step"]'),inputAmount:document.querySelector('input[name="amount"]'),submit:document.querySelector('button[type="submit"]')};function n(n){n.preventDefault();let u=Number(t.inputDelay.value),o=Number(t.inputStep.value),r=Number(t.inputAmount.value);for(let t=0;t<r;t+=1)i(t+1,u+t*o).then(({position:t,delay:n})=>{e.Notify.success(`✅ Fulfilled promise ${t} in ${n}ms`)}).catch(({position:t,delay:n})=>{e.Notify.warning(`❌ Rejected promise ${t} in ${n}ms`)})}function i(e,t){return new Promise((n,i)=>{setTimeout(()=>{Math.random()>.3?n({position:e,delay:t}):i({position:e,delay:t})},t)})}t.form.addEventListener("submit",n);
 },{"notiflix/build/notiflix-notify-aio":"MeeU"}]},{},["GyVV"], null)
-//# sourceMappingURL=/parcel-project-template/03-promises.1165929a.js.map
+//# sourceMappingURL=/goit-js-hw-09/03-promises.1165929a.js.map
